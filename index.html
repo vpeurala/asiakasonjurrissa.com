@@ -53,6 +53,10 @@
                 font-size: 70%;
                 text-align: right;
             }
+
+            .fb-share-button{
+                top: -5px;
+            }
         </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
@@ -60,6 +64,14 @@
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
         <script type="text/javascript">stLight.options({publisher: "eb5a55cc-3c01-4e27-96df-666a7e01fb3a", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/fi_FI/sdk.js#xfbml=1&appId=436585159711637&version=v2.3";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -69,9 +81,9 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-          <span class='st_facebook_large' displayText='Facebook'></span>
-          <span class='st_twitter_large'  st_msg='#asiakasonjurrissa #UI @asiakasonjurris http://asiakasonjurrissa.com/' displayText='Tweet'></span>
-          <span class='st_linkedin_large' displayText='LinkedIn'></span>
+          <div class="fb-share-button" data-href="http://asiakasonjurrissa.com/" data-layout="button_count"></div>
+          <a href="https://twitter.com/share" class="twitter-share-button" data-related="AsiakasOnJurris" data-hashtags="asiakasonjurris">Tweet</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
         <h1>Asiakas on jurrissa</h1>
         <p>Web-sovelluksesi tulisi olla niin helppokäyttöinen, että sitä pystyy käyttämään kännissäkin. Et pysty itse testaamaan, onko se. Minä teen sen sinun puolestasi.</p>
         <h3>Palvelu</h3>
