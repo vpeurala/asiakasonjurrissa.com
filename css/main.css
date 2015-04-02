@@ -1,22 +1,50 @@
+body {
+  background-color:#000;
+  background-image:url("/img/faija.jpeg");
+  background-repeat:no-repeat;
+  background-size:100%;
+  padding-top:30x;
+  padding-bottom:30px
+}
 
+a {
+  background-color:#000
+}
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+.jumbotron {
+  background-color:rgba(16,1,1,0.3);
+  color:#fefefe;
+  margin-top:30px;
+  margin-bottom:50px;
+  margin-left:50px;
+  max-width:720px;
+  text-align:center
+}
 
+small {
+  font-size:70%;
+  text-align:right
+}
 
+.fb-share-button {
+  top:-5px
+}
 
+.wd-logo {
+  margin-top:80px;
+  position:absolute;
+  right:300px
+}
 
+@media (max-width: 1160px) {
+.wd-logo {
+  margin-top:0;
+  position:relative;
+  right:0
+}
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.wd-logo >
+img {
+  border-radius:80px
+}
