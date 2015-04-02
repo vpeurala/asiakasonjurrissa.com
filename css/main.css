@@ -21,6 +21,11 @@ a {
   text-align:center
 }
 
+.jumbotron h1 {
+  font-size: 44px;
+  font-family: fantasy;
+}
+
 small {
   font-size:90%;
   text-align:right
