@@ -3,6 +3,8 @@ var ajankohtaista = {};
 ajankohtaista.view = function () {
 	return [m(".container[id='page']", [
 		m("h3", "Ajankohtaista"),
+		m("h4", "10.9.2015: Kesälomat ohi ja valmiina hommiin!"),
+		m("p", "Kesälomat meni mukavasti ja nyt taas duuni maistuisi! Tässä kuussa testaus 20 prosentin alennuksella normaalista 50 eurosta, eli vain naurettavan halvat 30 euroa (+ juomat). Tartu nyt tilaisuuteen!"),
 		m("h4", "2.4.2015: Uusi referenssi, Jaakko Kerosuo!"),
 		m("p", "Palveluni sai uuden asiakkaan! Maineikas folk-laulaja Jaakko Kerosuo pyysi asiakasonjurrissa.comia testaamaan videoportaalinsa. Tässä tulokset:"),
 		m("iframe[allowfullscreen=''][frameborder='0'][height='315'][src='https://www.youtube.com/embed/PvugzaHNa3Q'][width='420']")
